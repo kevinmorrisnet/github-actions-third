@@ -5,6 +5,7 @@ import pluginReact from "eslint-plugin-react";
 export default [
   js.configs.recommended,
   pluginReact.configs.flat.recommended,
+  pluginReact.configs.flat["jsx-runtime"],
   {
     files: ["**/*.jsx"],
     settings: {
@@ -14,6 +15,12 @@ export default [
     },
     languageOptions: {
       globals: globals.browser,
+    },
+  },
+  {
+    files: ["**/*.test.jsx"],
+    languageOptions: {
+      globals: globals.vitest,
     },
   },
 ];
