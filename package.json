@@ -1,8 +1,20 @@
 {
   "name": "02-basic-example",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/kevinmorrisnet/github-actions-third#readme",
+  "bugs": {
+    "url": "https://github.com/kevinmorrisnet/github-actions-third/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmorrisnet/github-actions-third.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
     "lint": "eslint --ext .jsx --fix src",
