@@ -7,6 +7,11 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     files: ["**/*.jsx"],
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
     languageOptions: {
       globals: globals.browser,
     },
